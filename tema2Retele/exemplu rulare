@@ -1,0 +1,27 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+[PyCharm] Your PSReadLine module version (2.0.0) is outdated, which may cause the problem with black lines across the terminal screen:
+https://learn.microsoft.com/windows/terminal/troubleshooting#black-lines-in-powershell-51-6x-70
+Install the latest version by running: 'Install-Module PSReadLine -MinimumVersion 2.0.3 -Scope CurrentUser -Force'
+After the installation, open a new terminal tab.
+
+PS D:\tema2Retele> python client.py
+=== Client UDP pornit ===
+Comenzi: CONNECT, DISCONNECT, PUBLISH , DELETE , LIST, EXIT
+
+Client > publish test
+Eroare locala: Trebuie sa fii conectat la server. Scrie CONNECT mai intai.
+Client > connect
+Server: OK: Conectat. Clienti activi: 1
+Client > publish prima mea postare
+Server: OK: Mesaj publicat cu ID=1
+Client > list
+Server: DATA:
+ID=1 | prima mea postare
+Client > delete a
+Eroare locala: ID-ul trebuie sa fie un numar intreg. Ex: DELETE 1
+Client > delete 1
+Server: OK: Mesajul 1 a fost sters
